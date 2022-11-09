@@ -1,0 +1,98 @@
+main {
+    display: block;
+    width: 100%;
+    padding: 20px 50px;
+}
+
+main h1 {
+    margin-left: 30px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+main .anuncio {
+    width: 100%;
+    margin: 50px 0;
+}
+
+main .anuncio h2 {
+    margin-left: 30px;
+}
+
+main .anuncio table {
+    width: 100%;
+    margin: 20px;
+    border-collapse: collapse;
+}
+
+main .anuncio table tr {
+    transition: background 0.3s ease-in-out;
+    transition: color 0.4s ease-in-out;
+}
+
+main .anuncio table tr:hover {
+    background-color: #346eff;
+    color: white;
+}
+
+main .anuncio table tr .data {
+    width: auto;
+    border-right: 1px solid #000;
+}
+
+main .anuncio table tr td {
+    width: 89.5%;
+    padding: 10px;
+    font-weight: 400;
+    border-bottom: 1px solid #000;
+    cursor: pointer;
+}
+
+main .contato {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main .contato .card {
+    width: 500px;
+    height: 200px;
+    background: #334063;
+    border-radius: 16px;
+    box-shadow: 0 0 10px #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .contato .card .title {
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .contato .card .title img {
+    width: 50px;
+}
+
+main .contato .card .title h1 {
+    color: #fff;
+    font-size: 30px;
+    margin-left: 5px;
+}
+
+main .contato .card a {
+    margin-top: 10px;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+}
+
+main .contato .card a:hover {
+    color: #346eff;
+    text-decoration: underline;
+}

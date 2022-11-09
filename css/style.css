@@ -75,7 +75,7 @@ nav ul li a:hover {
 
 .chevrons ion-icon {
     font-size: 30px;
-    color: rgb(0, 0, 0);
+    color: #334063;
     cursor: pointer;
     margin: 0 15px;
     transition: all 0.5s ease-in-out;
@@ -93,7 +93,8 @@ nav ul li a:hover {
 .carousel .slides .image img {
     width: 100vw;
     height: 600px;
-    /* margin-left: -101.5%; */
+    transition: margin-left 2s ease-in-out;
+    /* margin-left: -300%; */
 }
 
 .carousel .slides .atual {
@@ -117,10 +118,11 @@ nav ul li a:hover {
     box-shadow: 0 0 10px #333;
     border-radius: 500px;
     cursor: pointer;
+    transition: all 0.5s ease-in-out;
 }
 
 .carousel .slides .bolls .boll.active {
-    background: #333;
+    background: #334063;
 }
 
 main {
