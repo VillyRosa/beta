@@ -41,7 +41,7 @@ main .anuncio table tr .data {
 }
 
 main .anuncio table tr td {
-    width: 89.5%;
+    width: 85%;
     padding: 10px;
     font-weight: 400;
     border-bottom: 1px solid #000;
@@ -95,4 +95,47 @@ main .contato .card a {
 main .contato .card a:hover {
     color: #346eff;
     text-decoration: underline;
+}
+
+main .titulo-evento {
+    width: 100%;
+    margin: 30px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+main .apresentacao-evento {
+    margin: 80px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+main .apresentacao-evento .text {
+    width: 50%;
+    height: 100%;
+}
+
+main .apresentacao-evento .imagem {
+    width: 500px;
+    height: 250px;
+    background: #D9D9D9;
+    border-radius: 6px;
+    box-shadow: 0 0 10px #333;
+}
+
+main .apresentacao-evento .imagem img {
+    width: 500px;
+    height: 250px;
+}
+
+main .situacao-evento {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+main .situacao-evento tr td {
+    text-align: center;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
 }

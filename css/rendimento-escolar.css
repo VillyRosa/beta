@@ -111,6 +111,10 @@ main .container .container-aba .container-info-alunos {
     border-radius: 6px;
 }
 
+#back {
+    margin: -550px 0 0 -560px;
+}
+
 #horarios.hidden, #aluno.hidden, #notas.hidden, #faltas.hidden {
     display: none;
 }
