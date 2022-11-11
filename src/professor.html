@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrar Escolas</title>
+    <link rel="shortcut icon" href="../images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/gerenciamento.css">
+</head>
+<body class="professor">
+
+    <nav>
+        <a href="../index.html">Beta</a>
+        <ul>
+            <li><a href="#">Gerenciar Alunos</a></li>
+            <li><a href="../index.html">Sair</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <aside>
+            <ul>
+                <li class="sel" onclick="OpenWindow(1)">Faltas</li>
+                <li onclick="OpenWindow(2)">Notas</li>
+            </ul>
+        </aside>
+
+        <section>
+            <!-- Gerenciar faltas -->
+            <div class="faltas">
+                <h2>Gerenciar Faltas</h2>
+                <form action="">
+                    <table>
+                        <tr>
+                            <th>Foto</th>
+                            <th>Nome</th>
+                            <th>Faltas</th>
+                            <th>Presenças</th>
+                            <th>Status</th>
+                        </tr>
+                        <tr>
+                            <td><img src="../images/user.png" alt=""></td>
+                            <td>Nome do Aluno</td>
+                            <td>2</td>
+                            <td>8</td>
+                            <td>
+                                <label for="faltou">Faltou</label>
+                                <input type="radio" name="status" id="faltou">
+                                <input type="radio" name="status" id="presente">
+                                <label for="presente">Presente</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="../images/user.png" alt=""></td>
+                            <td>Nome do Aluno</td>
+                            <td>2</td>
+                            <td>8</td>
+                            <td>
+                                <label for="faltou">Faltou</label>
+                                <input type="radio" name="status" id="faltou">
+                                <input type="radio" name="status" id="presente">
+                                <label for="presente">Presente</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="../images/user.png" alt=""></td>
+                            <td>Nome do Aluno</td>
+                            <td>2</td>
+                            <td>8</td>
+                            <td>
+                                <label for="faltou">Faltou</label>
+                                <input type="radio" name="status" id="faltou">
+                                <input type="radio" name="status" id="presente">
+                                <label for="presente">Presente</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="../images/user.png" alt=""></td>
+                            <td>Nome do Aluno</td>
+                            <td>2</td>
+                            <td>8</td>
+                            <td>
+                                <label for="faltou">Faltou</label>
+                                <input type="radio" name="status" id="faltou">
+                                <input type="radio" name="status" id="presente">
+                                <label for="presente">Presente</label>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="inputSubmit">
+                        <input type="submit" value="Salvar">
+                    </div>
+                </form>
+            </div>
+
+            <!-- Gerenciar notas -->
+            <div class="notas hidden">
+                <h2>Gerenciar Notas</h2>
+            </div>
+        </section>
+    </main>
+
+    <script src="../js/professor.js"></script>
+</body>
+</html>

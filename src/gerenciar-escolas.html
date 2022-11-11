@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrar Escolas</title>
+    <link rel="shortcut icon" href="../images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/gerenciamento.css">
+</head>
+<body>
+
+    <nav>
+        <a href="../index.html">Beta</a>
+        <ul>
+            <li><a href="#">Gerenciar Escolas</a></li>
+            <li><a href="../index.html">Sair</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <aside>
+            <ul>
+                <li class="sel" onclick="OpenWindow(1)">Escolas</li>
+                <li onclick="OpenWindow(2)">Eventos e Notícias</li>
+                <li onclick="OpenWindow(3)">Alunos e Docentes</li>
+                <li onclick="OpenWindow(4)">Requisições de Cadastro</li>
+            </ul>
+        </aside>
+
+        <section>
+            <!-- Gerenciar Escolas -->
+            <div class="escolas">
+                <h2>Gerenciar Escola</h2>
+                <select name="" id="">
+                    <option value="" selected>Selecione a escola</option>
+                </select>
+                
+                <form action="">
+                    <div class="txtBox">
+                        <label for="schoolName">Nome da instituição</label>
+                        <input type="text" name="" id="schoolName" value="">
+                    </div>
+                    <div class="txtBox">
+                        <label for="responsibleName">Nome do responsável</label>
+                        <input type="text" name="" id="responsibleName" value="">
+                    </div>
+                    <div class="txtBox">
+                        <label for="responsibleCpf">CPF do responsável</label>
+                        <input type="text" name="" id="responsibleCpf" value="">
+                    </div>
+                    <div class="txtBox">
+                        <label for="schoolNumber">Número da instituição</label>
+                        <input type="number" name="" id="schoolNumber" value="">
+                    </div>
+                    <div class="txtBox">
+                        <label for="SchoolCity">Cidade da instituição</label>
+                        <input type="text" name="" id="SchoolCity" value="">
+                    </div>
+                    <div class="txtBox">
+                        <label for="SchoolDistrict">Bairro da instituição</label>
+                        <input type="text" name="" id="SchoolDistrict" value="">
+                    </div>
+                    <div class="txtBox">
+                        <label for="SchoolTel">Telefone da instituição</label>
+                        <input type="text" name="" id="SchoolTel" value="">
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="Atualizar">
+                    </div>
+                </form>
+            </div>
+
+            <!-- Eventos e Notícias -->
+            <div class="eventos-noticias hidden">
+                <div class="abas">
+                    <div class="aba sel" onclick="OpenAba(1, 1)">Eventos</div>
+                    <div class="aba" onclick="OpenAba(1, 2)">Notícias</div>
+                </div>
+                <div class="container">
+
+                    <!-- Aba adicionar evento -->
+                    <div class="eventos">
+                        <h2>Adicionar Evento</h2>
+                        <select name="" id="">
+                            <option value="" selected>Selecione a escola</option>
+                        </select>
+
+                        <form action="">
+                            <input type="text" name="" id="" placeholder="Nome do evento">
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Descrição"></textarea>
+                            <input placeholder="Data inicial" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" name="" id="" placeholder="Data de início">
+                            <input placeholder="Data término" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" name="" id="" placeholder="Data de início">
+                            <input type="file" src="" alt="" accept=".jpg, .png, .jfif, .jpeg, .tiff" multiple>
+                            <input type="submit" value="Adicionar">
+                        </form>
+                    </div>
+                    
+                    <!-- Aba adicionar notícia -->
+                    <div class="noticias hidden">
+                        <h2>Adicionar Notícias</h2>
+                        <select name="" id="">
+                            <option value="" selected>Selecione a escola</option>
+                        </select>
+
+                        <form action="">
+                            <input type="text" name="" id="" placeholder="Nome da notícia">
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Descrição"></textarea>
+                            <input type="submit" value="Adicionar">
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Alunos e Docentes -->
+            <div class="alunos-docentes hidden">
+                <div class="abas">
+                    <div class="aba sel" onclick="OpenAba(2,1)">Alunos</div>
+                    <div class="aba" onclick="OpenAba(2, 2)">Docentes</div>
+                </div>
+                <div class="container">
+                    
+                    <!-- Aba adicionar aluno -->
+                    <div class="alunos">
+                        <h2>Adicionar Aluno</h2>
+                        <select name="" id="">
+                            <option value="" selected>Selecione a escola</option>
+                        </select>
+
+                        <form action="">
+                            <input type="text" name="" id="" placeholder="Nome do aluno">
+                            <input type="text" name="" id="" placeholder="Ano">
+                            <input placeholder="Data de nascimento" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" name="" id="">
+                            <input type="file" src="" alt="" accept=".jpg, .png, .jfif, .jpeg, .tiff">
+                            <input type="submit" value="Adicionar">
+                        </form>
+                    </div>
+
+                    <!-- Aba adicionar Docente -->
+                    <div class="docentes hidden">
+                        <h2>Adicionar Docente</h2>
+                        <select name="" id="">
+                            <option value="" selected>Selecione a escola</option>
+                        </select>
+
+                        <form action="">
+                            <input type="text" name="" id="" placeholder="Nome do docente">
+                            <input type="text" name="" id="" placeholder="Graduação">
+                            <input placeholder="Data de nascimento" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" name="" id="">
+                            <input type="file" src="" alt="" accept=".jpg, .png, .jfif, .jpeg, .tiff">
+                            <input type="submit" value="Adicionar">
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Requisições de Cadastro -->
+            <div class="requisicoes hidden">
+                <h2>Requisições de Cadastro</h2>
+                <table>
+                    <tr>
+                        <th>Data da requisição</th>
+                        <th>Escola</th>
+                        <th>Nome do responsável</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr>
+                        <td>08/11/2022 - 9:31</td>
+                        <td>Nome da escola</td>
+                        <td>Nome do responsável</td>
+                        <td><a href="gerenciar-escolas.html">Aceitar</a><a href="gerenciar-escolas.html">Recusar</a></td>
+                    </tr>
+                    <tr>
+                        <td>08/11/2022 - 9:31</td>
+                        <td>Nome da escola</td>
+                        <td>Nome do responsável</td>
+                        <td><a href="gerenciar-escolas.html">Aceitar</a><a href="gerenciar-escolas.html">Recusar</a></td>
+                    </tr>
+                    <tr>
+                        <td>08/11/2022 - 9:31</td>
+                        <td>Nome da escola</td>
+                        <td>Nome do responsável</td>
+                        <td><a href="gerenciar-escolas.html">Aceitar</a><a href="gerenciar-escolas.html">Recusar</a></td>
+                    </tr>
+                    <tr>
+                        <td>08/11/2022 - 9:31</td>
+                        <td>Nome da escola</td>
+                        <td>Nome do responsável</td>
+                        <td><a href="gerenciar-escolas.html">Aceitar</a><a href="gerenciar-escolas.html">Recusar</a></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script src="../js/gerenciamento.js"></script>
+</body>
+</html>

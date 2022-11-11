@@ -1,7 +1,13 @@
 var images = document.querySelectorAll('.carrousel-image');
-var bolls = document.querySelectorAll('.boll');
 var atual = 1;
 var percent = 0;
+
+for (i = 0; i < images.length; i++) {
+    document.querySelector('.bolls').innerHTML += `<div class="boll"></div>`;
+}
+
+var bolls = document.querySelectorAll('.boll');
+bolls[0].classList.add('active');
 
 var loop = window.setTimeout(function() {
     next(1);

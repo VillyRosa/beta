@@ -70,13 +70,14 @@ main .container .container-aba {
 }
 
 main .container .container-aba .infos {
-    width: 430px;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 main .container .container-aba .infos p {
+    margin-left: 50px;
     font-weight: 500;
 }
 
